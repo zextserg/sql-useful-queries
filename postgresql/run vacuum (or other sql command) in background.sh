@@ -1,0 +1,2 @@
+# if you neeed to run some very long SQL command in background with writing response to some log file
+PGPASSWORD=abc123 nohup psql -U user1 -h awesome-host.com(or ip) -p 25060 -d db1 --set=sslmode=require -c "VACUUM VERBOSE ANALYZE" </dev/zero > /tmp/vacuum.out 2>&1 &

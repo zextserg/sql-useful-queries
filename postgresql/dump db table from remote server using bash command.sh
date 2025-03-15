@@ -1,0 +1,1 @@
+PGPASSWORD=abc1223 pg_dump -t 'table1' --schema-only -U user1 -h awesome-host.com(or ip) -p 25060 -d db1 --set=sslmode=require

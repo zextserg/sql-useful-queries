@@ -1,0 +1,1 @@
+\COPY (select * from table1) TO '/Users/user1/for_dump_dir/source_full_export.csv' DELIMITER ',' CSV HEADER;
